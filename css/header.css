@@ -19,7 +19,7 @@ body{
     background-color: #EBEAEA;
     height: 42px;
     color:black;
-    align-items: center;
+    /* align-items: center; */
 }
 .announcement-bar-left-section-jodan img{
     width: 28px;
@@ -49,6 +49,7 @@ body{
 
 .announcement-bar-inner-list li{
     padding: 3px;
+    padding-top: 10px;
     font-size: 13px;
     list-style-type: none;
 }
@@ -78,7 +79,8 @@ body{
     font-weight: 500;
 }
 .middle-nav-bar li{
-    padding: 10px;
+    padding: 0 10px;
+    padding-top: 2px;
     list-style-type: none;
 }
 .middle-nav-bar li:hover{
@@ -96,10 +98,11 @@ body{
     gap:10px;
 
 }
+
+
 .search-nav{
-    background-image: url('/NIKE\ PICTURE\ /');
     padding: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 70px;
     border: none;
     background-color: #E8E8E8;
@@ -116,10 +119,43 @@ body{
 }
 
 /* NIKE IMG */
-.nike-img{
-    display: block;
-    /* width           */
+.navigation-image {
+    /* display: flex; */
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    padding-top: 10px;
+  }
 
+/* middle part */
+.more-info{
+    /* display: flex; */
+    justify-content: center;
+}
+
+.more-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 55px;
+}
+.more-info-wrapper h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.more-info-wrapper button{
+    padding: 10px 20px 10px 20px;
+    background-color: #000000;
+    border: none;
+    color: #E8E8E8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.more-info-wrapper button:hover {
+    background-color: grey;
 }
 
 
@@ -131,7 +167,7 @@ body{
 
 
 
-/* footer */
+/* footer
 body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
@@ -152,10 +188,19 @@ body{
 	display: flex;
 	flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
 }
+
+.row > *{
+    width:fit-content;
+}
+
+
 ul{
 	list-style: none;
+    padding-left: 0;
 }
+
 .footer{
     position: fixed;
     left: 0;
@@ -197,8 +242,12 @@ ul{
 	color: #bbbbbb;
 	display: block;
 }
+.footer-col a{
+    color: #ffffff;
+}
 .footer-col ul li a:hover{
 	color: #ffffff;
+    text-decoration: none;
 }
 .footer-col .social-links a{
 	display: inline-block;
@@ -215,4 +264,4 @@ ul{
 .footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
-}
+} */
